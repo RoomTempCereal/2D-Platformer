@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    public 
-
+    public CharacterController2D controller;
     // Start is called before the first frame update
     void Start()
     {
