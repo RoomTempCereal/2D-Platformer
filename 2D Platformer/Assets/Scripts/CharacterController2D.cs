@@ -2,26 +2,7 @@
 
 
 
-
-
-
-
-
-
-//Not property of Dillon Longland - I plan to change this once I have a semi-working game
-
-
-
-
-
-
-
-
-
-
-
-
-
+// NOT My Code
 
 
 

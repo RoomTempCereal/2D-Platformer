@@ -1,3 +1,12 @@
+
+
+
+
+//My Code
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,11 +28,6 @@ public class CameraFollow : MonoBehaviour
             tempVec3.z = this.transform.position.z;
             this.transform.position = tempVec3;
             
-            //y axis
-            tempVec3.y = Target.position.y;
-            tempVec3.z = this.transform.position.z;
-            tempVec3.x = this.transform.position.x;
-            this.transform.position = tempVec3;
         }
 
     }

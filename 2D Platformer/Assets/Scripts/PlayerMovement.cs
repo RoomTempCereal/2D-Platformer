@@ -2,19 +2,7 @@
 
 
 
-
-
-
-
-
-//Code property of Dillon Longland
-
-
-
-
-
-
-
+//My Code
 
 
 

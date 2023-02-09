@@ -1,3 +1,12 @@
+
+
+
+
+//My Code
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +24,18 @@ public class CurrencySystem : MonoBehaviour
 
     void Start()
     {
-        Score += 50;
+        Score = 0;
         currencyText.text = "Currency: " + Score;
     }
+    /*
+    private void OnTriggerEnter2D(collider2D scrap) //collider2d is wrong
+    {
+        if (scrap.tag == "MyScrap")
+        {
+            Score++;
+            Destroy(scrap.gameobject);
+            currencyText.text = "Currency" + Score;
+        }
+    } */
 }
 
