@@ -27,15 +27,15 @@ public class CurrencySystem : MonoBehaviour
         Score = 0;
         currencyText.text = "Currency: " + Score;
     }
-    /*
-    private void OnTriggerEnter2D(collider2D scrap) //collider2d is wrong
+    
+    private void OnTriggerEnter2D(Collider2D MyScrap)
     {
-        if (scrap.tag == "MyScrap")
+        if(MyScrap.tag == "MyScrap")
         {
-            Score++;
-            Destroy(scrap.gameobject);
+            Score += 1;
+            Destroy(MyScrap.gameObject);
             currencyText.text = "Currency" + Score;
         }
-    } */
+    }
 }
 
