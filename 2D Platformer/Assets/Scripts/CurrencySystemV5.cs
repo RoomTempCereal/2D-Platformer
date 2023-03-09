@@ -5,22 +5,21 @@ using UnityEngine.UI;
 
 public class CurrencySystemV5 : MonoBehaviour
 {
-    public Text currencyText;
+    public CurrencyAddition currencyText;
     private int currencyScore;
 
     void Start()
     {
-        currencyScore = 0;
-        currencyText.text = "Currency: " + currencyScore;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("MyScrap"))
+        Debug.Log("OnTriggerEnter2D called");
+        if (other.CompareTag("Player"))
         {
-            Destroy(other.gameObject);
-            currencyScore += 5;
-            currencyText.text = "Currency: " + currencyScore;
-        }
+            Debug.Log("Collectible collided with something");
+            Destroy(gameObject);
+            currencyText.AddCurrency(5);
+        } 
     }
 }
